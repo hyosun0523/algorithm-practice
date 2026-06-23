@@ -1,6 +1,6 @@
-def arrinput():#함수 입력
+def arrinput():#배열 입력
     arr = list(map(int,input('값 입력:').split()))
-    return arr
+    return arr#입력된 배열 반환
 
 def ssort(arr):#선택정렬
     for i in range(0, len(arr)-1):
