@@ -9,7 +9,7 @@ def ssort(arr):
             if(arr[key]>arr[j]):
                 key = j
         arr[i], arr[key] = arr[key], arr[i]
-        print(arr)
+    print(arr)
         
 def isort(arr):
     for i in range(1, len(arr)):
@@ -19,14 +19,14 @@ def isort(arr):
             arr[j+1] = arr[j]
             j -= 1
         arr[j+1] = key
-        print(arr)
+    print(arr)
 
 def bsort(arr):
     for i in range(0, len(arr)-1):
         for j in range(0, len(arr) - i - 1):
             if(arr[j]>arr[j+1]):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
-            print(arr)
+    print(arr)
 
 arrA = arrinput()
 ssort(arrA)
