@@ -1,4 +1,4 @@
-def arrinput():
+def arrinput():#함수 입력
     arr = list(map(int,input('값 입력:').split()))
     return arr
 
