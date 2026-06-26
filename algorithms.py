@@ -63,16 +63,13 @@ def fibo(n):
         return fibo(n-1) + fibo(n-2)
 
 def hanoi(n, start, temp, end):
-    total = 1
     if n == 1:
         print('board', 1, "->", end)
-        print('총 횟수: ',total)
-    else:
+        print('총 횟수: ', 1)
+    else:     
         hanoi(n-1, start, end, temp)
-        print('board', n "->", end)
+        print('board', n, "->", end)
         hanoi(n-1, temp, start, end)
-        total += 1
-    print('총 횟수: ',total)
 
 arrA = arr_input()
 selection_sort(arrA)
